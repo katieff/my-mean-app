@@ -1,2 +1,2 @@
 # my-mean-app
-MEAN stack app
+this is a MEAN app inspired by https://scotch.io/tutorials/setting-up-a-mean-stack-single-page-application
