@@ -1,0 +1,7 @@
+{
+  "directory": "public/libs",
+  "interactive": false,
+
+  "proxy" : "http://proxy.msg.de:3128",
+  "https-proxy" : "http://proxy.msg.de:3128"
+}
