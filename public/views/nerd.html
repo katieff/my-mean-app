@@ -4,8 +4,29 @@
     <p>{{ tagline }}</p>
     
 </div>
-<div>
-    <ul>
-        <li ng-repeat="nerd in nerds">{{nerd.name}}</li>
+<div class="panel panel-default">
+    <div ng-show="message" class="alert alert-success" role="alert">
+        {{message}}
+    </div>
+    <div ng-show="errMessage" class="alert alert-danger" role="alert">
+        {{errMessage}}
+    </div>
+    <div class="panel-body input-group">
+        <input type="text" ng-model="newNerd" placeholder="type a new nerd name" class="form-control">
+        <span class="input-group-btn" >
+            <button type="button" ng-click="addNerd(newNerd)" class="btn btn-default glyphicon glyphicon-plus"></button>
+        </span>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+    <ul class="list-group">
+        <li ng-repeat="nerd in nerds" class="list-group-item clearfix">
+            {{nerd.name}}
+            <span class="pull-right">
+                <button ng-click="deleteNerd(nerd)" class="glyphicon glyphicon-remove btn btn-default"></button>
+            </span>
+        </li>
     </ul>
+    </div>
 </div>
